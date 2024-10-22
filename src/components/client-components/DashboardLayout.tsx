@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
-const Sidebar = dynamic(() => import("@/app/(dashboard)/client/components/sidebar/Sidebar"), { ssr: false });
-const Navbar = dynamic(() => import("@/app/(dashboard)/client/components/Navbar"), { ssr: false });
+const Sidebar = dynamic(() => import("@/components/client-components/Sidebar"), { ssr: false });
+const Navbar = dynamic(() => import("@/components/client-components/Navbar"), { ssr: false });
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
